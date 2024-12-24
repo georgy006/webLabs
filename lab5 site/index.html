@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анимированное меню на jQuery</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </head>
+  <body>
+    <!-- Шапка страницы -->
+    <header>
+      <div class="header-container">
+        <a href="#"><img class="logo-img" src="icon/logo64.png" alt="logo" /></a>
+        <h1 class="page-name">Wow Auto</h1>
+      </div>
+    </header>
+
+    <!-- Анимированное меню -->
+    <nav class="animated-menu">
+      <ul>
+        <li>
+          <a href="#article1">Типы автомобилей</a>
+          <ul>
+            <li><a href="#section1">Хэтчбек</a></li>
+            <li><a href="#section2">Седан</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#article2">О сайте</a>
+          <ul>
+            <li><a href="#section3">Главная</a></li>
+            <li><a href="#section4">О нас</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#article3">Интерактивные элементы</a>
+          <ul>
+            <li><a href="#section5">Опрос</a></li>
+            <li><a href="#section6">Таблица автомобилей</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Основное содержимое страницы -->
+    <main>
+      <article id="article1">
+        <h2>Типы автомобилей</h2>
+        <section id="section1">
+          <h3>Хэтчбек</h3>
+          <p>Безопасность <meter value="50" min="0" max="100" high="70"></meter></p>
+          <img src="icon/hetch.png" alt="auto" />
+          <p>
+            Хэтчбек — название кузова легкового автомобиля с одним или двумя рядами сидений, дверью в задней стенке и укороченным задним свесом.
+          </p>
+        </section>
+        <section id="section2">
+          <h3>Седан</h3>
+          <p>Безопасность <meter value="80" min="0" max="100" high="70"></meter></p>
+          <img src="icon/sedan.png" alt="auto" />
+          <p>
+            Седан — закрытый кузов легкового автомобиля с багажником, структурно отделённым от пассажирского салона.
+          </p>
+        </section>
+      </article>
+
+      <article id="article2">
+        <h2>О сайте</h2>
+        <section id="section3">
+          <h3>Главная</h3>
+          <p>Автомобиль — это средство передвижения...</p>
+          <aside>Дополнительная информация о главной странице.</aside>
+        </section>
+        <section id="section4">
+          <h3>О нас</h3>
+          <p>Сайт «Wow Auto» был запущен как хобби программиста Михаила Рогальского...</p>
+          <aside>Дополнительная информация о компании.</aside>
+        </section>
+      </article>
+
+      <article id="article3">
+        <h2>Интерактивные элементы</h2>
+        <section id="section5">
+          <h3>Опрос</h3>
+          <form>
+            <label>Имя*: <br /><input type="text" placeholder="Ваше имя" required /></label><br /><br />
+            <label>Электронная почта: <br /><input type="email" placeholder="Ваш email" /></label><br /><br />
+            <input class="btn" type="submit" value="Отправить" />
+            <input class="btn" type="reset" value="Отменить" />
+          </form>
+        </section>
+        <section id="section6">
+          <h3>Таблица автомобилей</h3>
+          <table class="table-auto">
+            <thead>
+              <tr>
+                <th>Марка</th>
+                <th>Модель</th>
+                <th>Год</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Ford</td><td>Focus</td><td>2020</td></tr>
+              <tr><td>Toyota</td><td>Camry</td><td>2021</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <h3>О сайте</h3>
+      <p>Создал: Минаев Г.В., Проект: Лабораторная работа №3, 2024г.</p>
+    </footer>
+    <aside>
+      Это пример текста в элементе aside.
+    </aside>
+  </body>
+</html>

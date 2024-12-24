@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="icon/logo32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wow Auto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#"><img class="logo-img" src="icon/logo64.png" alt="logo" /></a>
+        <h1 class="page-name">Wow Auto</h1>
+        <nav class="main-menu">
+          <a href="#main">Главная</a>
+          <a href="#About">О нас</a>
+          <a href="#Interview">Опрос</a>
+          <a href="#footer">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <menu class="page-box news-list">
+      <h2>Auto</h2>
+      <li><a href="#1">Хэтчбек</a></li>
+      <li><a href="#2">Седан</a></li>
+    </menu>
+
+    <main>
+      <article >
+        <section class="page-box">
+          <h2 id="1">Хэтчбек</h2>
+          <p>Безопасность <meter value="50" min="0" max="100" high="70"></meter></p>
+          <img src="icon/hetch.png" alt="auto" />
+          <p>
+            Хэтчбек — название кузова легкового автомобиля с одним или двумя рядами
+            сидений, дверью в задней стенке и укороченным задним свесом.
+          </p>
+        </section>
+
+        <section class="page-box">
+          <h2 id="2">Седан</h2>
+          <p>Безопасность <meter value="80" min="0" max="100" high="70"></meter></p>
+          <img src="icon/sedan.png" alt="auto" />
+          <p>
+            Седа́н — закрытый кузов легкового автомобиля с багажником, структурно
+            отделённым от пассажирского салона, обычно с двумя или тремя рядами сидений.
+          </p>
+        </section>
+
+        <section id="main" class="page-box">
+          <h2 >Главная</h2>
+          <img src="icon/auto.jpg" alt="auto" class="main-img" />
+          <p>Автомобиль</p>
+          <details>
+            <summary>Подробнее</summary>
+            <p>
+              История первого автомобиля начинается с изобретения первых механизмов и машин, предшествующих
+              появлению современного автомобиля...
+            </p>
+            <aside>
+              <p>
+                Машины на электричестве достигли пика развития в начале XX века...
+              </p>
+            </aside>
+          </details>
+          <figure>
+            <video controls src="video/honda.mp4"></video>
+          </figure>
+        </section>
+
+        <section class="page-box" id="About">
+          <h2 >О нас</h2>
+          <h3>
+            Автомобильный сайт в Рунете, через который ежегодно продаётся более
+            полутора миллионов подержанных машин.
+          </h3>
+          <details>
+            <summary>Подробнее</summary>
+            <p>
+              Сайт «Wow Auto» был запущен 15 июля 1996 года как хобби программиста Михаила Рогальского...
+            </p>
+            <figure>
+              <audio controls src="audio/news3.mp3"></audio>
+            </figure>
+          </details>
+        </section>
+      </article>
+
+      <section class="page-box" id="table">
+        <h2 >Таблица автомобилей</h2>
+        <table class ="table-auto">
+          <thead>
+            <tr>
+              <th>Марка</th>
+              <th>Модель</th>
+              <th>Год</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ford</td>
+              <td>Focus</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>Toyota</td>
+              <td>Camry</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Honda</td>
+              <td>Civic</td>
+              <td>2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="page-box", id="Interview">
+      <div class="form-container" >
+        <h1><a >Опрос:</a></h1>
+        <form>
+          <label>Имя*: <br><input type="text" placeholder="Ваше имя" required></label><br><br>
+          <label>Номер телефона (X XXX XXX-XX-XX)*: <br><input id="phone" type="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Ваш номер телефона" required></label><br><br>
+          <label>Адрес электронной почты: <br><input id="email" type="email" placeholder="Ваша электронная почта"></label><br><br>
+          <label>Личный сайт: <br><input type="url" placeholder="Ваш личный сайт"></label><br><br>
+          <label>Дата рождения: <br><input type="date"></label><br><br>
+          <label>Любимый цвет: <br><input type="color"></label><br><br>
+          <fieldset>
+            <legend>Оцените нашу работу*:</legend>
+            <input id="number-box" type="number" min="0" max="10" onchange="changeRange();" value="5" required><br>
+            <input id="range-box" type="range" min="0" max="10" onchange="changeNumber();" required><br><br>
+            <input type="text" placeholder="Пояснение" list="default-values">
+            <datalist id="default-values">
+              <option value="Понравилось">
+              <option value="Остался равнодушен">
+              <option value="Это неинтересно">
+            </datalist>
+          </fieldset>
+          <label>Комментарий: <br><textarea placeholder="Текст комментария"></textarea></label><br><br>
+          <div>
+            <input class="btn" type="submit" value="Отправить">
+            <input class="btn" type="reset" value="Отменить">
+          </div>
+
+          <p id="error"></p>
+        </form>
+        <article>Опрос по заказу Wow auto</article>
+      </div>
+      </section>
+    </main>
+
+    
+    <hr />
+
+    <footer>
+      <div class="footer-container">
+        <h3 id="footer">О сайте</h3>
+        <menu>
+          <li>Создал: Минаев Г.В.</li>
+          <li>Проект: Лабораторная работа №3</li>
+          <li>2024г.</li>
+        </menu>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

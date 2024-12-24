@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0e7ff;
+  color: #333;
+  height: 100vh;
+}
+
+header {
+  background-color: #5e00ff;
+  color: white;
+  padding: 15px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  background-color: #4a00e0;
+  border: none;
+  padding: 15px 20px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #d34f3d;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.profile-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #4a00e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-circle:hover {
+  background-color: #d34f3d;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 73vh;
+}
+
+.block {
+  background-color: #5e00ff;
+  color: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.block h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #4a00e0;
+  padding-bottom: 10px;
+}
+
+.block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.block li {
+  margin: 15px 0;
+}
+
+.block a {
+  display: block;
+  background-color: #4a00e0;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.block a:hover {
+  background-color: #d34f3d;
+}
+
+footer {
+  background-color: #5e00ff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.contacts, .support, .social {
+  flex: 1;
+}
+
+.contacts h4, .support h4, .social h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #4a00e0;
+  padding-bottom: 5px;
+}
+
+.social-link {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #ffbb00;
+}

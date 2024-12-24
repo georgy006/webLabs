@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <form>
+                <button>Студент</button>
+                <button>Преподаватель</button>
+            </form>
+            <div class="logo">LearnLand</div>
+            <form>
+                <form id="searchForm">
+                    <input type="text" placeholder="Введите запрос" required>
+                    <button type="submit">Поиск</button>
+                </form>
+            </form>
+            <button class="profile-circle" onclick="openProfile()">👤</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="block">
+            <h3>Студент</h3>
+            <ul>
+                <li><a href="#student-course">Курс</a></li>
+                <li><a href="#student-chat">Чат</a></li>
+                <li><a href="#student-theory">Теория</a></li>
+                <li><a href="#student-assignments">Задания</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h3>Преподаватель</h3>
+            <ul>
+                <li><a href="#teacher-course">Создание заданий</a></li>
+                <li><a href="#teacher-students">Создание плана урока</a></li>
+                <li><a href="#teacher-resources">Ресурсы</a></li>
+                <li><a href="#teacher-assignments">Готовые задания</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contacts">
+                <h4>Контакты</h4>
+                <p>Телефон: +7 (900) 123-45-67</p>
+                <p>Email: support@languageapp.com</p>
+                <p>Адрес: г. Владимир, ул. Пушкина, д. 1</p>
+            </div>
+            <div class="support">
+                <h4>Поддержка</h4>
+                <p>Часто задаваемые вопросы</p>
+                <p>Обратная связь</p>
+                <p>Поддержка 24/7</p>
+            </div>
+            <div class="social">
+                <h4>Мы в соцсетях</h4>
+                <a href="#" class="social-link">ВКонтакте</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js" defer></script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Записная книжка - Органайзер</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Заголовок с месяцем и стрелками -->
+    <div class="calendar-header">
+      <button id="prev-month">⬅️</button>
+      <h2 id="month-year">Ноябрь 2024</h2>
+      <button id="next-month">➡️</button>
+    </div>
+    <!-- Календарная таблица -->
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th>Пн</th>
+          <th>Вт</th>
+          <th>Ср</th>
+          <th>Чт</th>
+          <th>Пт</th>
+          <th>Сб</th>
+          <th>Вс</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-days">
+      </tbody>
+    </table>
+    <!-- Модальное окно для задач на дату -->
+    <div id="task-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h3 id="task-date">Дела на <span id="selected-date"></span></h3>
+        <ul id="task-list">
+          <!-- Список дел будет добавлен динамически -->
+        </ul>
+        <input type="text" id="new-task" placeholder="Добавить новое дело" />
+        <button id="add-task">Добавить</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
